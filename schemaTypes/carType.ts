@@ -6,8 +6,8 @@ export const carType = defineType({
   type: 'document',
   fields: [
     defineField({
-      name: "immatriculation",
-      type: "string"
+      name: 'immatriculation',
+      type: 'string',
     }),
     defineField({
       name: 'marque',
@@ -42,10 +42,10 @@ export const carType = defineType({
       type: 'string',
       options: {
         list: [
-          { title: 'Essence', value: 'essence' },
-          { title: 'Diesel', value: 'diesel' },
-          { title: 'Électrique', value: 'électrique' },
-          { title: 'Hybride', value: 'hybride' },
+          {title: 'Essence', value: 'essence'},
+          {title: 'Diesel', value: 'diesel'},
+          {title: 'Électrique', value: 'électrique'},
+          {title: 'Hybride', value: 'hybride'},
         ],
       },
     }),
@@ -54,15 +54,15 @@ export const carType = defineType({
       type: 'string',
       options: {
         list: [
-          { title: 'Manuelle', value: 'manuelle' },
-          { title: 'Automatique', value: 'automatique' },
+          {title: 'Manuelle', value: 'manuelle'},
+          {title: 'Automatique', value: 'automatique'},
         ],
       },
     }),
     defineField({
       name: 'images',
       type: 'array',
-      of: [{ type: 'image' }],
+      of: [{type: 'image'}],
     }),
     defineField({
       name: 'createdAt',
