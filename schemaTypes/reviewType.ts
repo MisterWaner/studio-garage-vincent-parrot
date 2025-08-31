@@ -34,5 +34,26 @@ export const reviewType = defineType({
       title: 'Author',
       type: 'string',
     }),
+    defineField({
+        name: 'status',
+        title: 'Status',
+        type: 'string',
+        options: {
+            list: [
+                {title: 'Publié', value: 'publié'},
+                {title: 'En attente', value: 'en-attente'},
+            ],
+        },
+    }),
+    defineField({
+        name: 'createdAt',
+        title: 'Created At',
+        type: 'datetime',
+    }),
+    defineField({
+        name: 'updatedAt',
+        title: 'Updated At',
+        type: 'datetime',
+    }),
   ],
 })

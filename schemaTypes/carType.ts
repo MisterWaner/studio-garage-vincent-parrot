@@ -38,6 +38,17 @@ export const carType = defineType({
       type: 'text',
     }),
     defineField({
+      name: 'status',
+      type: 'string',
+      options: {
+        list: [
+          {title: 'Disponible', value: 'disponible'},
+          {title: 'Vendu', value: 'vendu'},
+          {title: 'Réservé', value: 'réservé'},
+        ],
+      },
+    }),
+    defineField({
       name: 'carburant',
       type: 'string',
       options: {

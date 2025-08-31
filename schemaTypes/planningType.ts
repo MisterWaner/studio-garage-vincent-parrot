@@ -6,6 +6,10 @@ export const planningType = defineType({
   type: 'document',
   fields: [
     defineField({
+      name: 'dayInTheWeek',
+      type: 'number'
+    }),
+    defineField({
       name: 'day',
       type: 'string',
       options: {
@@ -46,6 +50,7 @@ export const planningType = defineType({
           {title: '15:00', value: '15:00'},
           {title: '16:00', value: '16:00'},
           {title: '17:00', value: '17:00'},
+          {title: '18:00', value: '18:00'},
         ],
       },
     }),
@@ -64,6 +69,7 @@ export const planningType = defineType({
           {title: '15:00', value: '15:00'},
           {title: '16:00', value: '16:00'},
           {title: '17:00', value: '17:00'},
+          {title: '18:00', value: '18:00'},
         ],
       },
     }),
