@@ -10,7 +10,7 @@ export const carType = defineType({
       type: 'string',
     }),
     defineField({
-      name: 'marque',
+      name: 'brand',
       type: 'string',
     }),
     defineField({
@@ -18,19 +18,19 @@ export const carType = defineType({
       type: 'string',
     }),
     defineField({
-      name: 'annee',
+      name: 'year',
       type: 'number',
     }),
     defineField({
-      name: 'couleur',
+      name: 'color',
       type: 'string',
     }),
     defineField({
-      name: 'kilometrage',
+      name: 'mileage',
       type: 'number',
     }),
     defineField({
-      name: 'prix',
+      name: 'price',
       type: 'number',
     }),
     defineField({
@@ -38,25 +38,29 @@ export const carType = defineType({
       type: 'text',
     }),
     defineField({
+      name: 'power',
+      type: 'number',
+    }),
+    defineField({
       name: 'status',
       type: 'string',
       options: {
         list: [
-          {title: 'Disponible', value: 'disponible'},
-          {title: 'Vendu', value: 'vendu'},
-          {title: 'Réservé', value: 'réservé'},
+          {title: 'Available', value: 'available'},
+          {title: 'Sold', value: 'sold'},
+          {title: 'Reserved', value: 'reserved'},
         ],
       },
     }),
     defineField({
-      name: 'carburant',
+      name: 'fuel',
       type: 'string',
       options: {
         list: [
-          {title: 'Essence', value: 'essence'},
+          {title: 'Gasoline', value: 'gasoline'},
           {title: 'Diesel', value: 'diesel'},
-          {title: 'Électrique', value: 'électrique'},
-          {title: 'Hybride', value: 'hybride'},
+          {title: 'Electric', value: 'electric'},
+          {title: 'Hybrid', value: 'hybrid'},
         ],
       },
     }),
@@ -65,8 +69,8 @@ export const carType = defineType({
       type: 'string',
       options: {
         list: [
-          {title: 'Manuelle', value: 'manuelle'},
-          {title: 'Automatique', value: 'automatique'},
+          {title: 'Manual', value: 'manual'},
+          {title: 'Automatic', value: 'automatic'},
         ],
       },
     }),

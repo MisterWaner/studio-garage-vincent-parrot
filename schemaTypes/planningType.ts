@@ -36,7 +36,7 @@ export const planningType = defineType({
       },
     }),
     defineField({
-      name: 'ouverture',
+      name: 'openingHours',
       type: 'string',
       options: {
         list: [
@@ -51,11 +51,12 @@ export const planningType = defineType({
           {title: '16:00', value: '16:00'},
           {title: '17:00', value: '17:00'},
           {title: '18:00', value: '18:00'},
+          {title: 'Fermé', value: 'fermé'}
         ],
       },
     }),
     defineField({
-      name: 'fermeture',
+      name: 'closingHours',
       type: 'string',
       options: {
         list: [
@@ -70,6 +71,7 @@ export const planningType = defineType({
           {title: '16:00', value: '16:00'},
           {title: '17:00', value: '17:00'},
           {title: '18:00', value: '18:00'},
+          {title: 'Fermé', value: 'fermé'}
         ],
       },
     }),

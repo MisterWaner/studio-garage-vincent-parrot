@@ -40,8 +40,8 @@ export const reviewType = defineType({
         type: 'string',
         options: {
             list: [
-                {title: 'Publié', value: 'publié'},
-                {title: 'En attente', value: 'en-attente'},
+                {title: 'Published', value: 'published'},
+                {title: 'Pending', value: 'pending'},
             ],
         },
     }),
